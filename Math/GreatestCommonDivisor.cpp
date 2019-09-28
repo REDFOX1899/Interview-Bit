@@ -38,3 +38,20 @@ int Solution::gcd(int A, int B) {
     
     return B;
 }
+
+
+// Better for understanding 
+
+ int Solution::gcd(int m, int n) {
+         
+        if(m < n)
+               swap(m, n);
+        
+        if(n == 0)
+               return m;
+         
+
+        return gcd(m % n, n);
+  }
+
+//gcd(a,b)=gcd(b,a mod b),
