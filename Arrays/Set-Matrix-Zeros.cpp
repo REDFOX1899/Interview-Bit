@@ -1,3 +1,8 @@
+/*
+Given a matrix, A of size M x N of 0s and 1s. If an element is 0, set its entire row and column to 0.
+
+Note: This will be evaluated on the extra memory used. Try to minimize the space and time complexity.
+*/
 void Solution::setZeroes(vector<vector<int> > &A) {
     int m = A.size();
     int n = A[0].size();
